@@ -1,86 +1,76 @@
-html,
 body {
-  padding: 0;
-  margin: 0;
-}
-
-header {
-  margin: 0;
-  padding: 2em 5em 4em;
-  color: black;
-  margin-bottom: 2rem;
-}
-
-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transform: skewY(-4deg);
-  background: #3d87f5;
-  transform-origin: bottom left;
-  z-index: -1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
 }
 
 textarea {
+  background: transparent;
+  border: none;
   resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
 }
 
-.title {
-  font-size: 48px;
-  font-family: "Noto Serif", serif;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.date {
-  font-family: "Noto Serif", serif;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.time {
-  width: 10%;
-  text-align: right;
-  height: 2.5rem;
-  padding: 1rem;
-  border-right: 1px solid lightgrey;
-  border-top: 1px solid lightgrey;
-}
-
-.content {
-  width: 80%;
-  text-align: left;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  background: lightgreen;
-  border-right: 1px solid lightgrey;
-  border-top: 1px solid lightgrey;
-  font-family: "Sanchez", serif;
-  font-size: 14px;
-}
-
-.save {
-  width: 10%;
+.jumbotron {
   text-align: center;
-  padding-top: 1.5rem;
-  border-radius: 4px;
-  background: #cf4036;
-  border-bottom: 1px solid lightgrey;
-  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
 }
 
-.planner-container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  background: white;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
-  margin-bottom: 3rem;
+.description {
+  white-space: pre-wrap;
 }
 
-.time-slot {
-  display: flex;
+.time-block {
+  /* text-align: center; */
+  border-radius: 15px;
+}
+
+/* .container{
+    display: flex;
+  
+  } */
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
 }

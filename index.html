@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,71 +18,56 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Reminder 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
   </head>
-  <body>
-    <header>
-      <h1 class="title">Reminder 2.0</h1>
-      <h2 class="date" id="date"></h2>
-    </header>
 
-    <div class="main-content">
-      <div class="planner-container">
-        <div class="time-slot">
-          <div class="time">9:00 AM</div>
-          <textarea class="content" id="9am">Check into class!</textarea>
-          <div class="save" id="saveNine"><i class="fas fa-save"></i></div>
-        </div>
-        <div class="time-slot">
-          <div class="time">10:00 AM</div>
-          <textarea class="content" id="10am">Meeting</textarea>
-          <div class="save" id="saveTen"><i class="fas fa-save"></i></div>
-        </div>
-        <div class="time-slot">
-          <div class="time">11:00 AM</div>
-          <textarea class="content" id="11am"></textarea>
-          <div class="save" id="saveEleven"><i class="fas fa-save"></i></div>
-        </div>
-        <div class="time-slot">
-          <div class="time">12:00 AM</div>
-          <textarea class="content" id="12pm">Lunch</textarea>
-          <div class="save" id="saveTwelve"><i class="fas fa-save"></i></div>
-        </div>
-        <div class="time-slot">
-          <div class="time">1:00 PM</div>
-          <textarea class="content" id="1pm">Work</textarea>
-          <div class="save" id="saveOne"><i class="fas fa-save"></i></div>
-        </div>
-        <div class="time-slot">
-          <div class="time">2:00 PM</div>
-          <textarea class="content" id="2pm">Work</textarea>
-          <div class="save" id="saveTwo"><i class="fas fa-save"></i></div>
-        </div>
-        <div class="time-slot">
-          <div class="time">3:00 PM</div>
-          <textarea class="content" id="3pm">Meeting</textarea>
-          <div class="save" id="saveThree"><i class="fas fa-save"></i></div>
-        </div>
-        <div class="time-slot">
-          <div class="time">4:00 PM</div>
-          <textarea class="content" id="4pm">Work</textarea>
-          <div class="save" id="saveFour"><i class="fas fa-save"></i></div>
-        </div>
-        <div class="time-slot">
-          <div class="time">5:00 PM</div>
-          <textarea class="content" id="5pm">Work</textarea>
-          <div class="save" id="saveFive"><i class="fas fa-save"></i></div>
-        </div>
-      </div>
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar application</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+        <id="hours-table">
+            <label for="9am">09:00 AM</label>
+            <input type="text" id="9am" class="hour-input" placeholder="9:00 AM"></input>
+            <button for="9am" class="button">Schedule</button>
+            <br>
+            <label for="10am">10:00 AM</label>
+            <input type="text" id="10am" class="hour-input" placeholder="10:00 AM"></input>
+            <button class="button">Schedule</button>
+            <br>
+            <label for="11am">11:00 AM</label>
+            <input type="text" id="11am" class="hour-input" placeholder="11:00 AM"></input>
+            <button class="button">Schedule</button>
+            <br>
+            <label for="12pm">12:00 PM</label>
+            <input type="text" id="12pm" class="hour-input" placeholder="12:00 PM"></input>
+            <button class="button">Schedule</button>
+            <br>
+            <label for="1pm">01:00 PM</label>
+            <input type="text" id="1pm" class="hour-input" placeholder="1:00 PM"></input>
+            <button class="button">Schedule</button>
+            <br>
+            <label for="2pm">02:00 PM</label>
+            <input type="text" id="2pm" class="hour-input" placeholder="2:00 PM"></input>
+            <button class="button">Schedule</button>
+            <br>
+            <label for="3pm">03:00 PM</label>
+            <input type="text" id="3pm" class="hour-input" placeholder="3:00 PM"></input>
+            <button class="button">Schedule</button>
+            <br>
+            <label for="4pm">04:00 PM</label>
+            <input type="text" id="4pm" class="hour-input" placeholder="4:00 PM"></input>
+            <button class="button">Schedule</button>
+            <br>
+            <label for="5pm">05:00 PM</label>
+            <input type="text" id="5pm" class="hour-input" placeholder="5:00 PM"></input>
+            <button class="button">Schedule</button>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
