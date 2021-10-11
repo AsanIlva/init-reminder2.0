@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Reminder 2.0</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Reminder 2.0</h1>
+      <h2 class="date" id="date"></h2>
+    </header>
+
+    <div class="main-content">
+      <div class="planner-container">
+        <div class="time-slot">
+          <div class="time">9:00 AM</div>
+          <textarea class="content" id="9am">Check into class!</textarea>
+          <div class="save" id="saveNine"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="time">10:00 AM</div>
+          <textarea class="content" id="10am">Meeting</textarea>
+          <div class="save" id="saveTen"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="time">11:00 AM</div>
+          <textarea class="content" id="11am"></textarea>
+          <div class="save" id="saveEleven"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="time">12:00 AM</div>
+          <textarea class="content" id="12pm">Lunch</textarea>
+          <div class="save" id="saveTwelve"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="time">1:00 PM</div>
+          <textarea class="content" id="1pm">Work</textarea>
+          <div class="save" id="saveOne"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="time">2:00 PM</div>
+          <textarea class="content" id="2pm">Work</textarea>
+          <div class="save" id="saveTwo"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="time">3:00 PM</div>
+          <textarea class="content" id="3pm">Meeting</textarea>
+          <div class="save" id="saveThree"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="time">4:00 PM</div>
+          <textarea class="content" id="4pm">Work</textarea>
+          <div class="save" id="saveFour"><i class="fas fa-save"></i></div>
+        </div>
+        <div class="time-slot">
+          <div class="time">5:00 PM</div>
+          <textarea class="content" id="5pm">Work</textarea>
+          <div class="save" id="saveFive"><i class="fas fa-save"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
